@@ -2,7 +2,7 @@
 
 本仓库仅仅用作 [浅析 CryptoJS.AES 加解密过程](https://668000.xyz/archives/3/) 博文的 Rust 实现演示代码，并没有写的很严谨，**仅供学习使用，请不要将其用于生产环境**。
 
-# EVP_BytesToKey 逻辑
+## EVP_BytesToKey 逻辑
 
  1. 将 password 转换成二进制 buffer
  2. 将 salt 转换成二进制 buffer，并确保 salt 是 8 位
@@ -15,7 +15,7 @@
 
 参考代码：[rowserify/EVP_BytesToKey](https://github.com/browserify/EVP_BytesToKey/blob/master/index.js)
 
-# Cyptojs.AES 加密字符串解析
+## Cyptojs.AES 加密字符串解析
 
 加密字符串是 base64 编码，其所对应的字节数组由三部分组成：
 
